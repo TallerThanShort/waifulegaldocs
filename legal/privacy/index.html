@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Virtual Waifu's Privacy Policy</title>
+      <style>
+      	body{
+      		background-color: black;
+      		color: white;
+      		}
+      		a{
+      			color: aqua;
+      		}
+      </style>
+   </head>
+    <body>
+        <h1>Virtual Waifu's Privacy Policy</h1>
+        <p id="upload-date" style="font-size: 8px; position: absolute; top: 0; right: 29px;" title="Last Updated Tuesday, March 11th 2023">April 11, 2023 patch 2</p>
+        <hr>
+        <p>This Privacy Policy ("The Privacy Policy") intends to cover privacy concerns ("The Concerns") regarding the Virtual Waifu Discord Bot, Virtual Waifu Revolt Bot & Virtual Waifu Crispy-Chat Bot (collectively "The Application") across Discord, Revolt and Crispy-Chat (collectively "The Platforms"), regarding any Unique Identifiers, such as UUID's, or other Personal Identifiers, Message Content, or any Guild or Server data collected (collectively "Collected Data").</p>
+        <p>The Privacy Policy is part of The Waifu Legal Documents, and as such, references other documents and is referenced by other documents in The Waifu Legal Documents. By your continued use of The Application, on any of The Platforms in any way, you agree to be bound by The Privacy Policy and The Waifu Legal Documents as a whole, including but not limited to The Acceptable Usage Policy.</p>
+        <p>The Application uses first-party and third-party API's and libraries across The Platforms where it can be publicly accessed. A list of said API's, libraries, and their corresponding Privacy Policies can be found linked in the Libraries document.</p>
+        <p>This document, along with The Waifu Legal Documents, is subject to change. Any changes will be notified via The Platforms at the time they take effect. It is up to the Users to agree and use The Application according to <!--The Privacy Policy and other documents in--> The Waifu Legal Documents.</p>
+        <br>
+        <h2>1. How we handle Collected Data</h2>
+        <p>The Application does not, has not, and will not store any Personal Identifiers, including and not limited to Channel ID's, Guild or Server ID's, Usernames, Discriminators, Nicknames, UUID's, Profile Images or Crispy-Chat Account Tokens without explicitly notifying the user beforehand.</p>
+        <p>If and when any Collected Data is stored, upon the User's agreement, it will be stored for no longer than fourteen (14) days.</p>
+        <p>Any Collected Data is stored on VS3, The Application's database, and can be requested at any time during the fourteen (14) days it is stored.</p>
+        <p>The Application shares some Channel ID's and some Guild or Server ID's, along with some specific Message Content with some of it's third-party API's, to ensure functionality. This includes and is not limited to sharing Voice Channel ID's with the Discord Bot API, to join and leave Voice Channels on Discord, Guild ID's with the Crisp API, to send messages to the correct Guild on Crispy-Chat, and song data, such as Track URL's, with the fire-glsp API, to play music from Fire. Below is an in-depth list of what specific data is shared with any and all of the first-party and third-party API's:</p>
+        <ol>
+            <li>Track URL's from Message Content on The Platforms</li>
+            <p>The Application's "Play" feature sends a Request to the fire-glsp API to fetch Song Data, such as the Playback URL, Cover Art URL and Artist Name, to play the audio in a Discord Voice Channel and/or display information about the requested Track URL in the location where the feature was used.</p>
+            <li>Voice Channel ID's on Discord</li>
+            <p>The Application can send Requests to the Discord Bot API containing Discord Voice Channel ID's, to connect to Discord Voice Channels.</p>
+            <li>User ID's and Guild or Server ID's across The Platform's</li>
+            <p>The Application can send Requests containing the User's UUID and/or the User's current Guild or Server ID to the API of the platform it's currently being used on, to mute, kick or ban a User on that specific platform.</p>
+            <p>The Application on Crispy-Chat sends requests to the Crisp API containing the Guild ID of the Guild where The Application was used, to ensure functionality.</p>
+            <p>The Application will only send Discord User ID's or Discord Server ID's to the Discord Bot API, Revolt User ID's or Revolt Server ID's to the Revolt API and Crispy-Chat User ID's or Crispy-Chat Guild ID's to the Crisp API respectively.</p>
+            <li>Sharing Random Emoji across The Platforms</li>
+            <p>The Application's "Ched" feature can be used by the Users to send a random emoji or emoticon from a predefined list. These emoji and emoticon selections are hard-coded and can be found on any of The Application's Base Server's or Guild's. The Application cannot see what emoji are publicly or privately available on any of The Platforms.</p>
+            <li>Public User Information across The Platforms</li>
+            <p>The Application's "User Info" feature can be used by any User across any of The Platform's to view information about their account on the specific platform they are currently using. The Application only makes requests to the according API, for example the Discord Bot API to show the User's Public Discord Server Profile Information on Discord. The Application cannot and will not share Publicly Accessible User Information to The Platforms about their other accounts on different platforms.</p>
+            <li>gen.ggpht prompt data from Message Content across The Platform's</li>
+            <p>The Application's "Generate" feature can be used to send a Text-To-Image prompt to gen.ggpht. Message Content highlighted as a prompt is shared with the gen.ggpht API, to create an image based on the text content of the prompt. It is the User's liability to share any personal information or personal identifiers using the "Generate" feature, and it is strongly advised to the User that they do not share any personal information using this feature. Any prompt text will be stored, modified or used according to gen.ggpht's Privacy Policy and/or Terms of Service. The Application does not share any other Collected Data with the gen.ggpht API.</p>
+            <li>External Media and NSFW Content Filters across The Platforms</li>
+            <p>The Application's "Waifu" feature can be used by any User to load an image from <a href="https://waifu.pics/">waifu.pics</a> across The Platforms where it is publicly accessible. The Application sends a Request via the waifu.pics API (api.waifu.pics). The request sent to the waifu.pics API requests an image from the Safe/Suitable for Work (SFW) endpoint "waifu", but can sometimes accidentally return some questionable images. The Application runs all External Media through our NSFW Content Filters API and the Verbose BounceBack API before displaying the External Media to the User, to attempt to reduce the amount of possibly Not Safe/Suitable For Work (NSFW) External Media shared with the Users. No Collected Data is shared with the waifu.pics API, NSFW Content Filters API or Verbose BounceBack API.</p>
+        </ol>
+        <br>
+        <h2>2. The Rights of Users</h2>
+        <p>Users may exercise certain rights regarding their Collected Data collected by The Application.</p>
+        <p>In particular, Users have the right to request any of the following rights:</p>
+        <ul>
+            <li>
+                <b>Access their Collected Data.</b>
+            </li>
+            <p>Users have the right to learn if any Collected Data is being processed by The Application, obtain disclosure regarding certain aspects of the processing and obtain a copy of the Collected Data undergoing processing.</p>
+            <li>
+                <b>Verify and seek rectification of Collected Data.</b>
+            </li>
+            <p>Users have the right to verify the accuracy of their Collected Data and ask for it to be updated or corrected.</p>
+            <li>
+                <b>Have their Collected Data deleted or otherwise removed.</b>
+            </li>
+            <p>Users+AKA-have the right, under certain circumstances, to obtain the erasure of their Collected Data from The Application. Further details are provided in the dedicated section below.</p>
+            <li>
+                <b>File a complaint.</b>
+            </li>
+            <p>Users have the right to bring a claim before their competent data protection authority.</p>
+        </ul>
+        <br>
+        <b>Details about the right to have Collected Data deleted or otherwise removed</b>
+        <p>Where Collected Data is processed for a public interest, in the exercise of an official authority vested in The Application or for the purposes of the legitimate interests pursued by the developers of The Application, Users may object to such processing by providing a ground related to their particular situation to justify the objection.</p>
+        <br>
+        <b>How to exercise these rights</b>
+        <p>Any requests to exercise User rights can be directed to the developers of The Application through the developer's contact email: <a href="mailto:tallerthanshort@duck.com">TallerThanShort@duck.com</a>. These requests can be exercised free of charge and will be addressed by the developers of The Applcation as early as possible.</p>
+        <br>
+        <h2>3. Anonymous Identifiers</h2>
+        <p>The Application sends Anonymous Identifiers to certain third-party API's and Libraries, including and not limited to the gen.ggpht API and the Verbose BounceBack API, to ensure functionality. These Anonymous Identifiers cannot be traced back further than The Application, and will never lead to any Collected Data. These Anonymous Identifiers are used to ensure functionality, and help the progress of the API's or Libraries Project/Application. For example, The Application will send requests to gen.ggpht's API containing the above mentioned text prompt and an Anonymous Identifier beggining with "VW-", so that the developers of gen.ggpht know that the prompt wasn't issued as part of a training exercise.</p>
+        <div class="buttons">
+            <button style="width: 100%; text-transform: uppercase;" id="returnButton" onclick="location.reload">return to start</button>
+        </div>
+    </body>
+</html>
