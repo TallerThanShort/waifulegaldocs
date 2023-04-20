@@ -16,22 +16,208 @@
         a{
             color: aqua;
         }
+        .dropbtn {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            }
+        .dropdown {
+            cursor: default;
+            position: relative;
+            display: inline-block;
+            }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+        .dropdown-content a:hover {background-color: rgb(245, 246, 247); color: rgb(98, 61, 83);}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color: rgb(245, 246, 247); color: black;}
     </style>
 
 </head>
-<body style="background-color: black; color: white;">
-    <h1>Welcome to Virtual Waifu's Landing Page!</h1>
-    <hr>
-    <div id="demo">
-        <p>We're terribly sorry, but this site is still under construction!</p>
-        <p>Feel free to check back soon!</p>
-        <br>
-        <p>In the meantime, here are some useful navigation links to help get you started with Virtual Waifu:</p>
-        <ul>
-            <li><a href="/invite/">Virtual Waifu's Official Invite links</a></li>
-            <li><a href="legal/privacy/">Virtual Waifu's Privacy Policy</a></li>
-            <li onclick="location.reload()"><a style="text-decoration: underline; cursor: pointer;">Landing</a></li>
-        </ul>
+<body style="background-color: black; color: white; overflow-x: hidden;">
+    <div class="navbar" style="width: 100%; height: 32px; padding: 1.6%; cursor: default;">
+        <div class="dropdown">
+            <span class="dropbtn">Get started</span>
+            <div class="dropdown-content">
+                <a href="/">Home</a>
+                <a href="https://virtualwaifubot.com/invite/">Invite</a>
+                <a href="https://virtualwaifubot.com/bot/setup/">Setup</a>
+                <a href="https://virtualwaifubot.com/bot/commands/">Commands</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="dropbtn">Socials</span>
+            <div class="dropdown-content">
+                <a href="https://discord.gg/Hf3ECU7DRv">Discord</a>
+                <a href="https://rvlt.gg/E1GKAxh8">Revolt</a>
+                <a href="https://common-codes.github.io/crispy/app/invite/?code=creak">Crispy-Chat</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="dropbtn">Links</span>
+            <div class="dropdown-content">
+                <a href="https://virtualwaifubot.com/legal/privacy/">Privacy Policy</a>
+                <a href="https://virtualwaifubot.com/legal/terms/">AUP</a>
+                <a href="https://virtualwaifubot.com/legal/datareq/">Request Data</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="dropbtn">Support</span>
+            <div class="dropdown-content">
+                <a href="https://discord.gg/Hf3ECU7DRv">Discord Support Server</a>
+                <a href="https://rvlt.gg/E1GKAxh8">Revolt Support Server</a>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; z-index: 0; position: relative; background: linear-gradient(rgb(245, 246, 247) -4.84%, rgb(143, 0, 0) 34.9%, rgb(33, 32, 54) 48.6%, rgb(51, 40, 62) 66.41%, rgb(98, 61, 83) 103.41%, rgb(140, 81, 102) 132.18%);">
+        <div style="justify-content: flex-end; align-items: flex-end; width: 50%; height: 100%; display: flex; z-index: -1; right: 0; top: 0; position: absolute; pointer-events: none;">
+            <img src="https://cdn.discordapp.com/app-icons/895251019603259403/b3bcfcea2adb0bd89d91576432a89781.webp" class="hidden xl:block" alt="An Image OK¿">
+            </div>
+        <div>
+            <div id="test" style="padding-top: 9rem; padding-bottom: 9rem; max-width: 1240px; width: 75%; margin-left: auto; margin-right: auto;">
+                <div style="text-align: left; width: 55%; margin-left: 0; margin-right: 0; ">
+                    <h1>Create a better server. Add more features.</h1>
+                    <p style="font-size: smaller;">Add Virtual Waifu to your servers, and enjoy a unique experience, wherever you hang out.</p>
+                    <div style="justify-content: center; padding: 26px;">
+                        <button style="border: none; height: 32px; width: 164px; cursor: pointer; border-radius: 10px; text-transform: uppercase; background-color: rgb(245, 246, 247); color: rgb(98, 61, 83); font-weight: 500;" onclick="location.href='https://virtualwaifubot.com/invite';">add to your servers</button>
+                        <button style="border: none; height: 32px; width: 164px; cursor: pointer; border-radius: 10px; text-transform: uppercase; background-color: rgb(157, 0, 0); color: rgb(245, 246, 247); font-weight: 500;" onclick="location.href='https://virtualwaifubot.com/bot/commands';">see features</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: rgb(33, 32, 54);">
+        <div style="padding-top: 2.5rem; padding-bottom: 2.5rem; max-width: 1240px; width: 100%; margin-left: 0; margin-right: 0;">
+            <div style="flex-direction: row; gap: 2rem; align-items: center; display: flex;">
+                <div style="justify-content: flex-start; width: 33%; align-items: center; display: flex; gap: 2rem;">
+                    <img style="width: 28px; height: 28px; border-radius: 5px; cursor: pointer;" src="https://cdn.discordapp.com/icons/885454145346232361/4704e10993b29dbc371bd9bb6f340a4d.webp" title="Tall's Server (Revolt)">
+                    <img style="width: 28px; height: 28px; border-radius: 5px; cursor: pointer;" src="https://cdn.discordapp.com/icons/925056345667960892/0e4e7555c959da95789ef28ad5f62680.webp" title="The Lemonade Stand (Discord)">
+                    <img style="width: 28px; height: 28px; border-radius: 5px; cursor: pointer;" src="https://cdn.discordapp.com/icons/751954296907628626/2a1dcdb608afdfaba991dcd35397933e.webp"  title="Quack Shadow (Discord)">
+                </div>
+                <div style="justify-content: flex-end; flex: 1 1 0%;">
+                    <h4>More than 10 Servers use Virtual Waifu</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div style="padding-top: 10rem; padding-bottom: 10rem;  max-width: 1240px; width: 100%; margin-left: auto; margin-right: auto;">
+            <div style="gap: 9rem; grid-template-columns: repeat(1,minmax(0,1fr)); display: grid;">
+                <div>
+                    <div style="display: grid; gap: 4rem; grid-template-columns: repeat(7,minmax(0,1fr));">
+                        <div style="grid-column: span 4/span 4;">
+                            <img src="./assets/1681915892gahaha.png" style="margin-left: auto; margin-right: auto; max-width: 560px; width: 100%; display: block;">
+                        </div>
+                        <div style="text-align: left; justify-content: center; align-items: flex-start; flex-direction: column; display: flex; grid-column: span 3/span;">
+                            <h2 style="margin-left: 0; margin-right: 0; font-size: 30px; margin: 0;">Upgrade your server!</h2>
+                            <p style="white-space: pre-line; margin-top: 2rem; margin-bottom: 2rem;">Make your server more interactive. Virtual Waifu comes with a wide range of features, including moderator-only mute, kick and ban features!</p>
+                            <div style="flex-direction: row; gap: 1rem; justify-content: flex-start; align-items: center; width: 100%; display: flex;">
+                                <button style="width: auto; font-size: 1rem; padding-top: .5rem; padding-bottom: .5rem; padding-left: .7rem; padding-right: .7rem; border-radius: 10px; overflow: hidden; gap: .375rem; align-items: center; flex-shrink: 0; display: flex; position: relative; left: -25px; cursor: pointer; border: none; text-transform: uppercase;">
+                                    <div style="justify-content: center; flex-grow: 1; max-width: 100%; display: flex;">
+                                        <span style="text-align: center; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; flex-shrink: 0; width: 100%; display: block;">
+                                            <div style="gap: .5rem; justify-content: center; align-items: center; display: flex;">Add to server</div>
+                                        </span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: grid; gap: 4rem; grid-template-columns: repeat(7,minmax(0,1fr));">
+                        <div style="grid-column: span 4/span 4;">
+                            <img src="./assets/1681915892gahaha.png" style="margin-left: auto; margin-right: auto; max-width: 560px; width: 100%; display: block;">
+                        </div>
+                        <div style="text-align: left; justify-content: center; align-items: flex-start; flex-direction: column; display: flex; grid-column: span 3/span;">
+                            <h2 style="margin-left: 0; margin-right: 0; font-size: 30px; margin: 0;">Fun Features!</h2>
+                            <p style="white-space: pre-line; margin-top: 2rem; margin-bottom: 2rem;">Virtual Waifu comes with pre-packed with many fun commands, ready to rock and roll wherever you hang out!</p>
+                            <div style="flex-direction: row; gap: 1rem; justify-content: flex-start; align-items: center; width: 100%; display: flex;">
+                                <button style="width: auto; font-size: 1rem; padding-top: .5rem; padding-bottom: .5rem; padding-left: .7rem; padding-right: .7rem; border-radius: 10px; overflow: hidden; gap: .375rem; align-items: center; flex-shrink: 0; display: flex; position: relative; left: -25px; cursor: pointer; border: none; text-transform: uppercase;">
+                                    <div style="justify-content: center; flex-grow: 1; max-width: 100%; display: flex;">
+                                        <span style="text-align: center; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; flex-shrink: 0; width: 100%; display: block;">
+                                            <div style="gap: .5rem; justify-content: center; align-items: center; display: flex;">Add to server</div>
+                                        </span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: grid; gap: 4rem; grid-template-columns: repeat(7,minmax(0,1fr));">
+                        <div style="grid-column: span 4/span 4;">
+                            <img src="./assets/1681915892gahaha.png" style="margin-left: auto; margin-right: auto; max-width: 560px; width: 100%; display: block;">
+                        </div>
+                        <div style="text-align: left; justify-content: center; align-items: flex-start; flex-direction: column; display: flex; grid-column: span 3/span;">
+                            <h2 style="margin-left: 0; margin-right: 0; font-size: 30px; margin: 0;">Create art with AI!</h2>
+                            <p style="white-space: pre-line; margin-top: 2rem; margin-bottom: 2rem;">Virtual Waifu comes with an unlimited-use "gen" feature, allowing you to generate images from any text prompt, in any style!</p>
+                            <div style="flex-direction: row; gap: 1rem; justify-content: flex-start; align-items: center; width: 100%; display: flex;">
+                                <button style="width: auto; font-size: 1rem; padding-top: .5rem; padding-bottom: .5rem; padding-left: .7rem; padding-right: .7rem; border-radius: 10px; overflow: hidden; gap: .375rem; align-items: center; flex-shrink: 0; display: flex; position: relative; left: -25px; cursor: pointer; border: none; text-transform: uppercase;">
+                                    <div style="justify-content: center; flex-grow: 1; max-width: 100%; display: flex;">
+                                        <span style="text-align: center; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; flex-shrink: 0; width: 100%; display: block;">
+                                            <div style="gap: .5rem; justify-content: center; align-items: center; display: flex;">Add to server</div>
+                                        </span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top: 5rem; padding-bottom: 5rem; background: linear-gradient(rgb(0, 0, 0) 30.6%, rgb(51, 40, 62) 66.41%, rgb(98, 61, 83) 103.41%, rgb(140, 81, 102) 132.18%); width: 100%; margin-left: auto; margin-right: auto;">
+        <h2 style="margin-left: 0; margin-right: 0; font-size: 30px; margin: 0; padding-left: 1rem;">Keep Reading</h2>
+        <div style="display: grid; gap: 1rem; grid-template-columns: repeat(3,minmax(0,1fr)); padding-top: 1rem;">
+            <div style="padding-left: 1rem;">
+                <div>
+                    <b>How to generate art</b>
+                </div>
+                <div style="padding-top: 1rem;">
+                    <a href="https://virtualwaifubot.com/bot/commands/gen">Read More</a>
+                </div>
+            </div>
+            <div style="padding-left: 1rem;">
+                <div>
+                    <b>Moderator Setup</b>
+                </div>
+                <div style="padding-top: 1rem;">
+                    <a href="https://virtualwaifubot.com/bot/setup/moderator">Read More</a>
+                </div>
+            </div>
+            <div style="padding-left: 1rem;">
+                <div>
+                    <b>TTS Blog Post</b>
+                </div>
+                <div style="padding-top: 1rem;">
+                    <a href="https://tallerthanshort.github.io/entries/?entry=nNgn4PP5CHDwjWOYEvvE">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top: 3rem; padding-left: 1rem;">
+            <div>
+                <p style="color: darkgray;">TallerThanShort 2023 - All Rights Reserved.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
