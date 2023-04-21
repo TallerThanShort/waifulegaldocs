@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Waifu's Official Invite!</title>
+    <title>Virtual Waifu | Multipurpose Waifu Bot</title>
+    <meta name="description" content="An all-in-one multipurpose bot for Discord, Revolt and Crispy-Chat | Virtual Waifu.">
+    <meta property="og:locale" content="en">
+    <meta property="og:site_name" content="Official Invite | Virtual Waifu's Website">
+    <meta property="og:title" content="Virtual Waifu's Official Invite Links">
+    <meta property="og:image" content="https://cdn.discordapp.com/app-icons/895251019603259403/b3bcfcea2adb0bd89d91576432a89781.webp?size=320">
+    <meta property="og:description" content="A simple page where you can invite Virtual Waifu!">
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/895251019603259403/faf3cbac0ecfdc1632bd15c6648a06b1.webp" data-react-helmet="true">
     <style>
         a{
             color: aqua;
@@ -27,7 +34,7 @@
         display: none;
         position: absolute;
         background-color: black;
-        min-width: 135px;
+        min-width: 150px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         }
@@ -38,22 +45,22 @@
         text-decoration: none;
         display: block;
         }
-        .dropdown-content a:hover {background-color: #ddd; color: black;}
+        .dropdown-content a:hover {background-color: rgb(245, 246, 247); color: rgb(98, 61, 83);}
 
         .dropdown:hover .dropdown-content {display: block;}
 
-        .dropdown:hover .dropbtn {/*background-color: rgb(0, 0, 0);*/  background-color: #ddd; color: black;}
+        .dropdown:hover .dropbtn {background-color: rgb(245, 246, 247); color: black;}
     </style>
 </head>
-<body style="background-color: black; color: white;">
+<body style="background-color: black; color: white; overflow-x: hidden;">
     <div class="navbar" style="width: 100%; height: 32px; padding: 1.6%; cursor: default;">
         <div class="dropdown">
             <span class="dropbtn">Get started</span>
             <div class="dropdown-content">
                 <a href="/">Home</a>
-                <a href="./invite/">Invite</a>
-                <a href="./bot/setup/">Setup</a>
-                <a href="./bot/commands/">Commands</a>
+                <a href="./">Invite</a>
+                <a href="../bot/setup/">Setup</a>
+                <a href="../bot/commands/">Commands</a>
             </div>
         </div>
         <div class="dropdown">
@@ -67,55 +74,59 @@
         <div class="dropdown">
             <span class="dropbtn">Links</span>
             <div class="dropdown-content">
-                <a href="./legal/privacy/">Privacy Policy</a>
-                <a href="./legal/terms/">AUP</a>
-                <a href="./legal/datareq/">Request Data</a>
+                <a href="../legal/privacy/">Privacy Policy</a>
+                <a href="../legal/terms/">AUP</a>
+                <a href="../legal/datareq/">Request Data</a>
             </div>
         </div>
         <div class="dropdown">
             <span class="dropbtn">Support</span>
             <div class="dropdown-content">
-                <a href="/">Coming Soon!</a>
+                <a href="https://discord.gg/Hf3ECU7DRv">Discord Support Server</a>
+                <a href="https://rvlt.gg/E1GKAxh8">Revolt Support Server</a>
             </div>
         </div>
     </div>
-    <h1>Welcome to Virtual Waifu's Official Invite Page!</h1>
-    <p>Did you know, Virtual Waifu was originally a Discord Music Bot and has been "reborn" 3 times?</p>
-    <hr>
-    <p>Below you can find any relevant invite links to invite Virtual Waifu wherever it's supported!</p>
-    <div class="invites" style="gap: 12rem; display: grid; grid-auto-rows: 1fr; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));">
-        <div title="Invite Virtual Waifu to Discord!" onclick="location.href='https://discord.com/oauth2/authorize?client_id=895251019603259403&permissions=67579079&scope=bot';">
-            <div style="height: 100%; display: flex; user-select: none; flex-direction: column; overflow: hidden; border-radius: 2px; font-weight: 500; cursor: pointer;">
-                <div style="height: 210px; overflow: hidden; background-color: black;">
-                    <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg" alt="Discord Logo" style="width: 100%; height: 100%; object-fit: contain; border: medium none;">
-                </div>
-                <div style="-moz-box-flex: 1; flex-grow: 1; background-color: black; color: #5865F2;">
-                    <div style="height: 100%; display: flex; flex-direction: column; gap: 11px; padding: 24px 16px 16px;">
-                        <p style="font-weight: 700; font-size: 19px; gap: 4px; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: center; justify-content: center;">Invite to Discord</p>
+    <div style="width: 100%; z-index: 0; position: relative; background: linear-gradient(rgb(0, 0, 0) 1.6%, rgb(51, 40, 62) 66.41%, rgb(143, 0, 0) 103.41%, rgb(245, 246, 247) 132.18%); padding-bottom: 3rem;">
+        <h1 style="padding-top: 3rem;">Welcome to Virtual Waifu's Official Invite Page!</h1>
+        <p>Did you know, Virtual Waifu was originally a Discord Music Bot and has been "reborn" 3 times?</p>
+    </div>
+    <div style="width: 100%; z-index: 0; position: relative; background: linear-gradient(rgb(143, 0, 0) 34.9%, rgb(33, 32, 54) 48.6%, rgb(51, 40, 62) 66.41%, rgb(98, 61, 83) 103.41%, rgb(140, 81, 102) 132.18%); padding-top: 2.5rem; padding-bottom: 4.3rem;">
+        <b>Below you can find any relevant invite links to invite Virtual Waifu wherever it's supported!</b>
+        <div class="invites" style="padding-top: 2.5rem; gap: 12rem; display: grid; grid-auto-rows: 1fr; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));">
+            <div title="Invite Virtual Waifu to Discord!" onclick="location.href='https://discord.com/oauth2/authorize?client_id=895251019603259403&permissions=67579079&scope=bot';">
+                <div style="height: 100%; display: flex; user-select: none; flex-direction: column; overflow: hidden; border-radius: 2px; font-weight: 500; cursor: pointer;">
+                    <div style="height: 210px; overflow: hidden; background-color: black; padding: 1rem;">
+                        <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg" alt="Discord Logo" style="width: 100%; height: 100%; object-fit: contain; border: medium none;">
+                    </div>
+                    <div style="-moz-box-flex: 1; flex-grow: 1; background-color: black; color: #5865F2;">
+                        <div style="height: 100%; display: flex; flex-direction: column; gap: 11px; padding: 24px 16px 16px;">
+                            <p style="font-weight: 700; font-size: 19px; gap: 4px; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: center; justify-content: center;">Invite to Discord</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div title="Invite Virtual Waifu to Revolt!" onclick="location.href='https://app.revolt.chat/bot/01FWVFN7XYSJQ6BWE8SPJKHGRQ';">
-            <div style="height: 100%; display: flex; user-select: none; flex-direction: column; overflow: hidden; border-radius: 2px; font-weight: 500; cursor: pointer;">
-                <div style="height: 210px; overflow: hidden; background-color: #101823;">
-                    <img src="https://autumn.revolt.chat/icons/gtc0gJE2S3RvuDhrl2-JeakvgbqEGr2acvBnRTTh6k" alt="Revolt Logo" style="width: 100%; height: 100%; object-fit: contain; border: medium none;">
-                </div>
-                <div style="-moz-box-flex: 1; flex-grow: 1; background-color: #101823; color: #ff4654;">
-                    <div style="height: 100%; display: flex; flex-direction: column; gap: 11px; padding: 24px 16px 16px;">
-                        <p style="font-weight: 700; font-size: 19px; gap: 4px; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: center; justify-content: center;">Invite to Revolt</p>
+            <div title="Invite Virtual Waifu to Revolt!" onclick="location.href='https://app.revolt.chat/bot/01FWVFN7XYSJQ6BWE8SPJKHGRQ';">
+                <div style="height: 100%; display: flex; user-select: none; flex-direction: column; overflow: hidden; border-radius: 2px; font-weight: 500; cursor: pointer;">
+                    <div style="height: 210px; overflow: hidden; background-color: #101823; padding: 1rem;">
+                        <img src="https://autumn.revolt.chat/icons/gtc0gJE2S3RvuDhrl2-JeakvgbqEGr2acvBnRTTh6k" alt="Revolt Logo" style="width: 100%; height: 100%; object-fit: contain; border: medium none;">
+                    </div>
+                    <div style="-moz-box-flex: 1; flex-grow: 1; background-color: #101823; color: #ff4654;">
+                        <div style="height: 100%; display: flex; flex-direction: column; gap: 11px; padding: 24px 16px 16px;">
+                            <p style="font-weight: 700; font-size: 19px; gap: 4px; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: center; justify-content: center;">Invite to Revolt</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div title="Invite Virtual Waifu to Crispy-Chat!" onclick="location.href='https://common-codes.github.io/crispy-nightly/bot/invite/virtualwaifu';">
-            <div style="height: 100%; display: flex; user-select: none; flex-direction: column; overflow: hidden; border-radius: 2px; font-weight: 500; cursor: pointer;">
-                <div style="height: 210px; overflow: hidden; background-color: #d4d6d5;">
-                    <img src="https://tallerthanshort.github.io/ut3.ggpht/icons/crispy.png" alt="Crispy-Chat Logo" style="width: 100%; height: 100%; object-fit: contain; border: medium none;">
-                </div>
-                <div style="-moz-box-flex: 1; flex-grow: 1; background-color: #d4d6d5; color: #003945;;">
-                    <div style="height: 100%; display: flex; flex-direction: column; gap: 11px; padding: 24px 16px 16px;">
-                        <p style="font-weight: 700; font-size: 19px; gap: 4px; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: center; justify-content: center;">Invite to Crispy-Chat</p>
+            <div title="Invite Virtual Waifu to Crispy-Chat!" onclick="location.href='https://common-codes.github.io/crispy-nightly/bot/invite/virtualwaifu';">
+                <div style="height: 100%; display: flex; user-select: none; flex-direction: column; overflow: hidden; border-radius: 2px; font-weight: 500; cursor: pointer;">
+                    <div style="height: 210px; overflow: hidden; background-color: #d4d6d5; padding: 1rem;">
+                        <img src="https://tallerthanshort.github.io/ut3.ggpht/icons/crispy.png" alt="Crispy-Chat Logo" style="width: 100%; height: 100%; object-fit: contain; border: medium none;">
+                    </div>
+                    <div style="-moz-box-flex: 1; flex-grow: 1; background-color: #d4d6d5; color: #003945;;">
+                        <div style="height: 100%; display: flex; flex-direction: column; gap: 11px; padding: 24px 16px 16px;">
+                            <p style="font-weight: 700; font-size: 19px; gap: 4px; display: flex; -moz-box-align: center; align-items: center; -moz-box-pack: center; justify-content: center;">Invite to Crispy-Chat</p>
+                        </div>
                     </div>
                 </div>
             </div>
