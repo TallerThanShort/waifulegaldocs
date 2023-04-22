@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Waifu | Multipurpose Waifu Bot</title>
+    <meta name="description" content="An all-in-one multipurpose bot for Discord, Revolt and Crispy-Chat | Virtual Waifu.">
+    <meta property="og:locale" content="en">
+    <meta property="og:site_name" content="How to use the gen feature | Virtual Waifu's Website">
+    <meta property="og:title" content="Virtual Waifu's Official Website">
+    <meta property="og:image" content="https://cdn.discordapp.com/app-icons/895251019603259403/b3bcfcea2adb0bd89d91576432a89781.webp?size=320">
+    <meta property="og:description" content="A quick guide on how you can generate art using Virtual Waifu's gen feature!">
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/895251019603259403/faf3cbac0ecfdc1632bd15c6648a06b1.webp" data-react-helmet="true">
+    <style>
+        monospace {
+            padding: .25rem;
+            background: black;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 6px;
+        }
+        img{
+            cursor: zoom-in;
+            max-width: 100%;
+            border-style: none;
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+        #infoBox #content {
+            display: block;
+            line-height: 130%;
+            box-sizing: border-box;
+        }
+        #infoBox {
+            background: none;
+            color: #c3c3c3;
+            border-left: .3em solid #fffb00;
+            border-radius: 0px;
+            padding: 0 0 0 1em;
+            margin-bottom: 1rem;
+            position: relative;
+            box-sizing: border-box;
+        }
+        p {
+            margin: 0 0 4px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        hr {
+            margin: 15px;
+            border-bottom: 1px solid rgb(33, 32, 54);
+        }
+        h3 {
+            margin-top: 0;
+            margin: 30px 0 18px;
+            letter-spacing: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            word-wrap: break-word;
+            margin: 0 0 5px;
+            word-break: break-word;
+            line-height: 1em;
+            letter-spacing: -.03em;
+            box-sizing: border-box;
+        }
+        a{
+            color: aqua;
+        }
+        .dropbtn {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            }
+        .dropdown {
+            cursor: default;
+            position: relative;
+            display: inline-block;
+            }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+        .dropdown-content a:hover {background-color: rgb(245, 246, 247); color: rgb(98, 61, 83);}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color: rgb(245, 246, 247); color: black;}
+    </style>
+
+</head>
+<body style="background-color: black; color: white; overflow-x: hidden; font-weight: 400; letter-spacing: 0; line-height: 1.65em;">
+    <div style="padding: 2rem;">
+        <h1>How to generate art with Virtual Waifu's "gen" feature!</h1>
+        <p style="font-size: smaller; font-weight: 200;">This quick guide goes over User interactions with the gen.ggpht API.</p>
+        <hr>
+        <h1 style="color: red;">Disclaimer:</h1>
+        <b style="color: red;">Be advised that any and all prompt text submited via Virtual Waifu's "gen" feature is shared with the gen.ggpht API, and while Virtual Waifu doesn't store or collect any prompt data, gen.ggpht may store, modify, use or reuse any prompt text submitted via their API. Links to the according ToS & Privacy Policy will be linked when published.</b>
+    </div>
+    <!-- marker -->
+    <div style="clear: both; content: ''; display: table; min-height: 520px; background: linear-gradient(rgb(0, 0, 0) -4.48%, rgb(33, 32, 54) 68.6%, rgb(51, 40, 62) 115.52%); position: relative; box-sizing: border-box;">
+        <div style="box-sizing: border-box;">
+            <div style="clear: both; content: ''; display: table; max-width: 100%; width: 100%; margin: 0 auto; box-sizing: border-box;">
+                <div id="main-content" style="min-height: 520px; display: flex; margin: 0 -1.5rem; box-sizing: border-box;">
+                    <div id="content-block" style="padding: 0 1.5px 1.5rem 1.5rem; position: relative; width: 75%; box-sizing: border-box;">
+                        <div id="partialViewContainer" style="box-sizing: border-box;">
+                            <div id="doc_content-block" style="box-sizing: border-box;">
+                                <div id="content-container" style="display: flex; margin: auto -1.5px -1.5rem -1.5rem; box-sizing: border-box;">
+                                    <div id="content-container_text" style="width: 100%; box-sizing: border-box;">
+                                        <div id="content-container_text-sec" style="padding: 2rem 1.5rem 1.5rem 4rem; box-sizing: border-box;">
+                                            <div id="content-block_head" style="margin-bottom: 1rem; padding: 0; box-sizing: border-box;">
+                                                <div id="content-block" style="align-items: flex-end; display: flex; justify-content: space-between; box-sizing: border-box;">
+                                                    <h1>Quick Start</h1>
+                                                </div>
+                                                <div id="article-head-sec">
+                                                    <div id="article-info">
+                                                        <ul>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                            </div>
+                                            <div id="content_block_text" style="clear: both; content: ''; display: table; font-size: .93rem; letter-spacing: .05em; line-height: 1.69em; word-wrap: break-word; display: block; word-break: break-word; box-sizing: border-box;">
+                                                <h4 style="margin-top: 0;">Learn how to interact with the gen.ggpht API via Virtual Waifu to create images from text prompts.</h4>
+                                                <section id="infoBox">
+                                                    <div id="title"><i>Biases and content acknowledgment</i></div>
+                                                    <div id="content">
+                                                        <p style="line-height: 2em;">Despite how impressive being able to turn text into images is, beware to the fact that this model may output content that reinforces or exacerbates societal biases, as well as realistic faces, pornography, violence and possibly copyright protected content. Virtual Waifu runs all external media from gen.ggpht through the NSFW Content Filters API in an attempt to reduce the amount of possibly NSFW content delivered to the users.</p>
+                                                    </div>
+                                                </section>
+                                                <br>
+                                                <hr>
+                                                <h2 id="1-add-the-bot">1: Add the Bot</h2>
+                                                <p>Go to <a href="https://virtualwaifubot.com/invite">virtualwaifubot.com/invite</a>, and choose the platform of the server you want to invite Virtual Waifu to. At the moment, we recommend Discord for a more stable experience.</p>
+                                                <section id="infoBox">
+                                                    <div id="title">Terms & Privacy Agreements</div>
+                                                    <div id="content">
+                                                        <p style="line-height: 2em;">Before Virtual Waifu will allow you to use the gen feature on Discord, you must <b>agree</b> to be bound by Virtual Waifu's Privacy Policy and AUP.<br><a href="https://virtualwaifubot.com/legal/privacy">Read the Privacy Policy</a> and <a href="https://virtualwaifubot.com/legal/terms">The Acceptable Usage Policy</a>.</p>
+                                                    </div>
+                                                </section>
+                                                <br>
+                                                <p><img src="https://cdn.virtualwaifubot.com/Documentation/Invite_Page.png" width="600px"></p>
+                                                <br>
+                                                <h2 id="2-enter-a-channel">2: Enter a <i>Text</i> Channel</h2>
+                                                <div style="grid-template-columns: 1fr 2fr; display: grid; gap: 1.6rem; margin: 1.5rem 0 .85rem; box-sizing: border-box;">
+                                                    <div style="box-sizing: border-box;">
+                                                        <img src="https://cdn.virtualwaifubot.com/Documentation/TextChannels.png" width="288px">
+                                                    </div>
+                                                    <div style="box-sizing: border-box;">
+                                                        <h3 id="on-the-virtual-waifu-official-server">On the Virtual Waifu Official Server</h3>
+                                                        <p>Select any of the "bot-" text channels visible in the channel navigation.</p>
+                                                        <h3 id="on-other-servers">On Other Servers</h3>
+                                                        <p>You can use Virtual Waifu's "gen" feature on any server that has invited the Bot. Look for instructions in the specific server on where to use Bot's.</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <h2 id="3-use-the-imagine-command">3: Using the "gen" feature</h2>
+                                                <h3 id="about-discord-commands">About Discord Commands</h3>
+                                                <p>Interacting with the Virtual Waifu Bot on Discord uses Application.Commands. Application Commands are used to interact with Discord Bot's, and perform other helpful tasks across Discord.<br><br>The "gen" command generates a unique image from a text description (known as a Prompt).</p>
+                                                <section id="infoBox">
+                                                    <div id="title">Current Issues Across Discord</div>
+                                                    <div id="content">
+                                                        <p style="line-height: 2em;">Currently, Virtual Waifu's "External Content" site (external-content.virtualwaifubot.com) isn't operational, and as such, Discord is caching the rendered results from gen.ggpht's generations. This means that, at time of writing, you are likely to see an irrelevant gen result when multiple Users use Virtual Waifu's "gen" feature on Discord. Stay tuned to find out when this is patched!</p>
+                                                    </div>
+                                                </section>
+                                                <div style="grid-template-columns: 3fr 5fr; display: grid; gap: 1.6rem; padding: 1.5em 0 .85em; box-sizing: border-box;">
+                                                    <div>
+                                                        <h3 id="using-imagine">Using "gen"</h3>
+                                                        <ol style="margin-bottom: 15px; margin-left: 20px; margin-top: 0; padding: 0; list-style-type: decimal; box-sizing: border-box;">
+                                                            <li style="list-style-type: decimal; list-style-position: outside; margin-bottom: .87em; box-sizing: border-box;">Type (prefix)<monospace>gen prompt:</monospace> or select the "gen" command from the slash commands pop-up.</li>
+                                                            <li style="list-style-type: decimal; list-style-position: outside; margin-bottom: .87em; box-sizing: border-box;">Type a description of the image you want to create in the <monospace>prompt</monospace> field.</li>
+                                                            <li style="list-style-type: decimal; list-style-position: outside; margin-bottom: .87em; box-sizing: border-box;">Press enter, or click the send button, to send the command.</li>
+                                                            <li style="list-style-type: decimal; list-style-position: outside; margin-bottom: .87em; box-sizing: border-box;">The Virtual Waifu Bot will generate a pop-up asking you to accept the Terms of Service. You must agree to the Terms of Service before any image will be generated.</li>
+                                                        </ol>
+                                                        <p>Respect the <a href="https://virtualwaifubot.com/legal/terms">Acceptable Usage Policy</a>. The AUP applies wherever the Virtual Waifu Bot is used.</p>
+                                                    </div>
+                                                    <div style="box-sizing: border-box;">
+                                                        <img src="https://cdn.virtualwaifubot.com/Documentation/GenCommand.png" style="margin-bottom: .62em;">
+                                                        <br>
+                                                        <p>If you don't see a pop-up when typing the <monospace>/gen</monospace> command on Discord, try typing the legacy prefix with the command <monospace>vw!gen</monospace>, usually this causes a pop-up bug in the Users favor.</p>
+                                                        <p>Most servers make sure Application Commands only work in specific Channels, or restrict usage by Roles. Application Commands are usually disabled in regular channels like #general.</p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <h2 id="4-processes-the-job">4: Await the Result</h2>
+                                                <h3 id="the-virtual-waifu-bot-takes-about-a-minute-to-generate-four-options">The gen.ggpht API usually takes about 10 seconds to generate a piece.</h3>
+                                                <div style="grid-template-columns: 3fr 5fr; display: grid; gap: 1.6rem; margin: 1.5em 0 .87em 0;">
+                                                    <div>
+                                                        <img src="https://virtualwaifubot.com/assets/QiTKMdEpthZSaeyaoto2.png">
+                                                    </div>
+                                                    <div>
+                                                        <p><b>Generating an image takes approximately 10 seconds</b> (on normal traffic, high traffic times will be higher). Discord Users can make roughly 20 <i>unique</i> Renders an hour, considering caching.</p>
+                                                        <p>A Render is any action that uses the gen.ggpht API. Renders include using the <monospace>/gen</monospace> command to create an image or creating image variations.</p>
+                                                        <p><b>Protip:</b> Use gen.ggpht's extensive suffixes, to generate art in a specific style, be it anime, realistic or even extremely vibrant! <a href="#5-prompt-suffix-list">List of suffixes</a></p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <h2 id="5-prompt-suffix-list">5: Suffix List</h2>
+                                                <ol>
+                                                    <li><monospace>-lucid</monospace> is useful for generating vibrantly colored images (some images can cause photosensitive seizures)</li>
+                                                    <li><monospace>-anime</monospace> is useful for generating anime-themed images.</li>
+                                                    <li><monospace>-smooth</monospace> is useful in combination with the <monospace>-anime</monospace> suffix to get a hand-painted anime style.</li>
+                                                    <li><monospace>-creative</monospace> generates images that are slightly further from your original prompt.</li>
+                                                    <li><monospace>-beta</monospace> generates much more "noisy" images.</li>
+                                                </ol>
+                                                <br>
+                                                <h2 id="6-save-your-image">6: Save Your Image</h2>
+                                                <p>Click on the image to open it to full size, and then right-click and choose <monospace>Save image</monospace>. On mobile, simply tap the image to view it fullscreen, and then tap the download icon in the top right corner. iOS and Android clients may vary.</p>
+                                                <br>
+                                                <br>
+                                                <hr>
+                                                <h2 id="next-steps">Next Steps</h2>
+                                                <h3 id="work-in-your-direct-messages">Generate images in your DM's (Discord)</h3>
+                                                <p><b style="color: red;">Beware, this is untested!</b> You can use the <monospace>/gen</monospace> command while in a DM with the Virtual Waifu Discord Bot. Images made within your direct messages are still subject to the Privacy Policy, AUP and content moderation rules.</p>
+                                                <h3 id="learn-more-about-prompts">Learn More About Prompts</h3>
+                                                <p><a href="https://openart.ai/promptbook">Check out OpenArt's Prompt Book</a>.</p>
+                                                <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
