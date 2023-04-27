@@ -1,0 +1,75 @@
+.background-primary {
+    background-color: black;
+    background-image: linear-gradient(to bottom right, rgb(24, 0, 38) 60%, rgb(32, 0, 20) 100%, rgb(51, 0, 81) 60%, rgb(116, 69, 217) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.primary-text {
+    color: rgb(255, 255, 255);
+}
+.secondary-text {
+    color: rgb(156, 150, 150);
+}
+monospace, .monospace {
+    color: rgb(255, 255, 255);
+    padding: .3rem;
+    background: rgb(32, 32, 32);
+    font: 'Courier New', Courier, monospace;
+    border-radius: 6px;
+}
+highlighted, .highlighted {
+    color: rgb(250, 200, 0);
+    background: rgb(0, 0, 0);
+    font-weight: 500;
+    padding: .5rem;
+}
+warning-block, .warning-block, .warning-block ul, .warning-block ol {
+    border-left: 4px solid rgb(250, 250, 0);
+    background: rgb(0, 0, 0);
+    padding: 10px 9px 6px 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+.warning-block ul li:before, .warning-block ol li:before {
+    content: "";
+}
+ul, ol {
+    list-style-type: none;
+    list-style-position: outside;
+    margin: none;
+    padding: none;
+}
+li, li::before, li:before {
+    padding-top: 4px;
+    content: "./ ";
+}
+.btn-primary {
+    font-size: 1rem;
+    padding: .5rem .5rem .7rem .7rem;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgb(116, 69, 217);
+    transition: background-color 0.8s;
+}
+.btn-secondary {
+    font-size: 1rem;
+    padding: .5rem .5rem .7rem .7rem;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgb(32, 0, 20);
+    transition: background-color 0.8s;
+}
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: blueviolet;
+}
+.img-class2 {
+   max-width: 100%;
+   width: auto;
+   height: auto;
+}
