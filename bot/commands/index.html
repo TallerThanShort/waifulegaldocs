@@ -13,8 +13,129 @@
     <meta property="og:description" content="This page covers Virtual Waifu's Commands and Features, and a simple rundown on how to use them.">
     <link rel="icon" href="https://cdn.discordapp.com/avatars/895251019603259403/faf3cbac0ecfdc1632bd15c6648a06b1.webp" data-react-helmet="true">
     <link rel="stylesheet" href="purpleboi.css">
+    <style>
+         a{
+            color: aqua;
+        }
+        .dropbtn {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            }
+        .dropdown {
+            cursor: default;
+            position: relative;
+            display: inline-block;
+            }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+        .dropdown-content a:hover {background-color: rgb(245, 246, 247); color: rgb(98, 61, 83);}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color: rgb(245, 246, 247); color: black;}
+    </style>
 </head>
-<body>
+<body class="background-primary">
+    <div class="navbar" style="width: 98%; height: 32px; padding: 1.6%; cursor: default;">
+        <div class="dropdown">
+            <span class="dropbtn">Get started</span>
+            <div class="dropdown-content">
+                <a href="/">Home</a>
+                <a href="https://virtualwaifubot.com/invite/">Invite</a>
+                <a href="https://virtualwaifubot.com/bot/setup/">Setup</a>
+                <a href="https://virtualwaifubot.com/bot/commands/">Commands</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="dropbtn">Socials</span>
+            <div class="dropdown-content">
+                <a href="https://discord.gg/Hf3ECU7DRv">Discord</a>
+                <a href="https://rvlt.gg/E1GKAxh8">Revolt</a>
+                <a href="https://common-codes.github.io/crispy/app/invite/?code=creak">Crispy-Chat</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="dropbtn">Links</span>
+            <div class="dropdown-content">
+                <a href="https://virtualwaifubot.com/legal/privacy/">Privacy Policy</a>
+                <a href="https://virtualwaifubot.com/legal/terms/">AUP</a>
+                <a href="https://virtualwaifubot.com/legal/datareq/">Request Data</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <span class="dropbtn">Support</span>
+            <div class="dropdown-content">
+                <a href="https://discord.gg/Hf3ECU7DRv">Discord Support Server</a>
+                <a href="https://rvlt.gg/E1GKAxh8">Revolt Support Server</a>
+            </div>
+        </div>
+    </div>
+    <div style="justify-content: center; padding-top: 1.7rem; background-color: rgba(33, 32, 54, 0.5);">
+        <div>
+            <div>
+                <div>
+                    <h1 class="primary-text">Create a better server. Add more features.</h1>
+                    <p class="secondary-text" style="font-size: smaller;">Add Virtual Waifu to your servers, and enjoy a unique experience, wherever you hang out.</p>
+                    <div style="justify-content: center; padding: 26px;">
+                        <button class="btn-primary primary-text" style="font-weight: 500;" onclick="location.href='https://virtualwaifubot.com/invite';">add to your servers</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 21px;">
+        <h1 class="primary-text">Virtual Waifu's commands:</h1>
+        <p class="secondary-text">Below is a list of Virtual Waifu's Commands and Features, and a short description of how they are used and work across different platforms!</p>
+    </div>
+    <div>
+        <div class="warning-block">
+            <h2 class="highlighted">REMEMBER</h2>
+            <p class="primary-text">Virtual Waifu's legacy prefix (the one that works on Revolt, Crispy-Chat <b>and</b> Discord) is <monospace>vw!</monospace>.</p>
+            <p class="primary-text">We recommend using Slash Commands (<monospace>/</monospace>) on Discord for a better experience, but legacy prefixes are still as functional across all platforms!</p>
+        </div>
+        <ul class="primary-text">
+            <h2 class="primary-text">Public Commands</h2>
+            <li><monospace>help</monospace></li>
+            <p>Shows a helpful list of commands provided by Virtual Waifu!</p>
+            <p>Virtual Waifu separates commands by <monospace>public</monospace> (any user can use these!), <monospace>moderator</monospace> (only moderators can use these!) and <monospace>private</monospace> (only the developers can use these!)</p>
+            <li><monospace>ping</monospace></li>
+            <li><monospace>info</monospace></li>
+            <li><monospace>ched</monospace></li>
+            <li><monospace>invite</monospace></li>
+            <li><monospace>avatar</monospace></li>
+            <li><monospace>p</monospace></li>
+            <li><monospace>waifu</monospace></li>
+            <li><monospace>gen</monospace></li>
+            <li><monospace>play</monospace></li>
+            <li><monospace>server</monospace></li>
+            <li><monospace>lol</monospace></li>
+            <li><monospace>clear</monospace></li>
+            <li><monospace>warn</monospace></li>
+            <li><monospace>kick</monospace></li>
+            <li><monospace>ban</monospace></li>
+            <li><monospace>debug</monospace></li>
+            <li><monospace>togglesafe</monospace></li>
+            <li><monospace>serverban</monospace></li>
+        </ul>
+    </div>
     
 </body>
 </html>
