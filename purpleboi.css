@@ -1,4 +1,5 @@
 .background-primary {
+    font-family: "Inter", sans-serif;
     background-color: black;
     background-image: linear-gradient(to bottom right, rgb(24, 0, 38) 60%, rgb(32, 0, 20) 100%, rgb(51, 0, 81) 60%, rgb(116, 69, 217) 100%);
     background-repeat: no-repeat;
